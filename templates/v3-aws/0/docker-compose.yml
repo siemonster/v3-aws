@@ -574,7 +574,7 @@ services:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: capricorn=1
   siemonster:
-    image: ikuturso/siemapp:f1
+    image: ikuturso/siemserve:31
     stdin_open: true
     tty: true
     environment:
