@@ -614,7 +614,7 @@ services:
       RABBITMQ_USER: ${RABBITMQ_USER}
       RABBITMQ_PASSWORD: ${RABBITMQ_PASSWORD}
   logstash-collector:
-    image: ikuturso/logstash-collector:6.2
+    image: ikuturso/logstash-collector:aws
     environment:
       RABBITMQ_USER: ${RABBITMQ_USER}
       RABBITMQ_PASSWORD: ${RABBITMQ_PASSWORD}
@@ -642,7 +642,7 @@ services:
       io.rancher.scheduler.affinity:host_label: proteus=1
       
   logstash-indexer:
-    image: ikuturso/logstash-indexer:6.2
+    image: ikuturso/logstash-indexer:aws
     environment:
       HEAP_SIZE: "2g"
       ELASTICSEARCH_HOST: "es-client-1"
