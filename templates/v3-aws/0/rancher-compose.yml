@@ -166,7 +166,7 @@ version: '2'
       default: "s13M0nSterV3"
 
     - variable: "SKEDLER_USER"
-      type: "password"
+      type: "string"
       required: true
       label: "Skedler Username"
       description: "Set the Skedler Username for Elasticsearch connnection"
